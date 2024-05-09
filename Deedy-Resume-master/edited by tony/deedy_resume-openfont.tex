@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tony}{Prajapati}{ \urlstyle{same}\href{http://devtony.live}{Devtony.live} \\
+\href{mailto:vqvtony@gmail.com}{vqvtony@gmail.com} | +919011443892 | \href{mailto:tony.prajapati23@pccoepune.org}{tony.prajapati23@pccoepune.org}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{PCCOE Pune}
+\descript{Btech in IT }
+\location{First Year | Pune, IN}
+\sectionsep
+
+\subsection{MHT CET}
+\location{ 2023 |  Perentile : 98.44}
+\sectionsep
+
+\subsection{M J College Jalgaon}
+\descript{HSC}
+\location{March 2022 | Jalgaon, IN}
+Swami Vivekananda \\
+Junior College\\
+
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/gittonyp}{\bf Devtony} \\
+LinkedIn://  \href{ https://www.linkedin.com/in/gittonyp}{\bf Devtony} \\
+Codeforces ://  \href{https://codeforces.com/profile/devtony}{\bf Devtony} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+Engineering Math \\
+Operating Systems \\
+Data Structures and Algo. \\
+Functional Programming \\
+Computer Graphics + Practicum \\
+Linux and Ubuntu \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\ \textbullet{} \LaTeX\ \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} CSS  \textbullet{} HTML \\
+\location{Familiar:}
+\textbullet{}
+Socket.io  \textbullet{} Android 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+\section*{Projects}
+
+\subsection*{Chess Game in C++}
+\begin{itemize}
+	\item Developed a console-based chess game using C++.
+	\item Implemented the rules of chess, including piece movement, capturing, and check/checkmate conditions.
+	\item Utilized object-oriented programming principles to design the game logic.
+	\item Demonstrated proficiency in data structures (e.g., arrays, vectors) for board representation.
+\end{itemize}
+
+\subsection*{Snake Game in C++}
+\begin{itemize}
+	\item Created a classic snake game using C++.
+	\item Designed the game loop, snake movement, and collision detection.
+	\item Utilized data structures (e.g., linked lists or arrays) to manage the snake's body.
+	\item Showcased problem-solving skills in handling game mechanics.
+\end{itemize}
+
+\subsection*{Function Chatroom Website}
+\begin{itemize}
+	\item Developed a chatroom website using HTML, CSS, and JavaScript.
+	\item Implemented real-time messaging using WebSocket or other communication protocols.
+	\item Designed an intuitive user interface for chat interactions.
+	\item Demonstrated web development skills and understanding of client-server communication.
+\end{itemize}
+
+\subsection*{Portfolio Website}
+\begin{itemize}
+	\item Designed and built a personal portfolio website.
+	\item Showcased your projects, skills, and achievements.
+	\item Utilized HTML, CSS, and possibly a front-end framework (e.g., React, Vue.js).
+	\item Highlighted your creativity and ability to present information effectively.
+\end{itemize}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
