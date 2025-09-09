@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tony}{Prajapati}{ \urlstyle{same}\\
+\href{mailto:vqvtony@gmail.com}{vqvtony@gmail.com} | +919011443892 | \href{mailto:tony.prajapati23@pccoepune.org}{tony.prajapati23@pccoepune.org}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{PCCOE Pune}
+\descript{Btech in IT }
+\location{Third Year | Pune, IN}
+\location{SGPA:8.1}
+\sectionsep
+
+\subsection{MHT CET}
+\location{ 2023 |  Perentile : 98.44}
+\sectionsep
+
+\subsection{M J College Jalgaon}
+\descript{HSC}
+\location{March 2022 | Jalgaon, IN}
+Swami Vivekananda \\
+Junior College\\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/gittonyp}{\bf tony} \\
+LinkedIn://  \href{ https://www.linkedin.com/in/gittonyp}{\bf tony} \\
+Codeforces ://  \href{https://codeforces.com/profile/devtony}{\bf tony} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+
+\subsection{Undergraduate}
+Data Structures and Algorithms \\
+Database Management Systems (DBMS) \\
+Operating Systems \\
+Computer Networks \\
+Object Oriented Programming (OOP) \\
+Software Engineering \\
+Artificial Intelligence and Machine Learning \\
+Web Technologies \\
+Unix/Linux Tools and Scripting \\
+Computer Graphics \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{} Python \textbullet{} C++ \textbullet{} JavaScript \textbullet{} \LaTeX \\
+\location{Over 1000 lines:}
+C \textbullet{} HTML \textbullet{} CSS \textbullet{} Shell \textbullet{} PHP \\
+\location{Familiar:}
+Node.js \textbullet{} Express.js \textbullet{} React.js \textbullet{} MySQL \textbullet{} MongoDB \\
+\sectionsep
+
+\subsection{Software Tools \& Platforms}
+Git \textbullet{} GitHub \textbullet{} VS Code \textbullet{} Eclipse \textbullet{} NetBeans \\
+Linux \textbullet{} Windows \textbullet{} WSL \textbullet{} MiKTeX \\
+\sectionsep
+
+\subsection{Systems \& Hardware}
+PC Assembly \textbullet{} OS Installation \textbullet{} Troubleshooting \textbullet{} Hardware Upgrades \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Experience}
+
+\subsection*{Computer Technician | Local Computer Shop}
+Assembled and configured custom desktop computers according to client requirements. \\
+Installed, managed, and troubleshooted Windows and other operating systems. \\
+Performed hardware diagnostics, replacement, and upgrades (RAM, storage, processors, etc.). \\
+Resolved software and system issues to ensure reliable performance. \\
+Assisted customers with technical support and provided clear, solution-focused guidance. \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}
+
+\subsection*{KinderConnect (Full-Stack Web App)}
+Developed a childcare and school management platform using React.js, Node.js, Express.js, and MongoDB. \\
+Implemented modules for student management, attendance, and communication. \\
+Demonstrated strong full-stack web development and database design skills. \\
+
+\subsection*{Railway Reservation System (JavaFX + MySQL)}
+Built a desktop-based railway booking system with login, booking, cancellation, and admin panel. \\
+Utilized JavaFX for GUI and MySQL as the backend database. \\
+
+\subsection*{Sudoku Solver (JavaFX)}
+Created a desktop application to solve Sudoku puzzles using backtracking algorithms. \\
+Showcased Java programming, algorithms, and GUI development. \\
+
+\subsection*{Chess Game (C++)}
+Designed and implemented a console-based chess game in C++. \\
+Applied object-oriented programming principles for piece movement, capturing, and checkmate logic. \\
+Utilized data structures (arrays, vectors) for board representation and move validation. \\
+
+\subsection*{UrjaSampda (SIH Prototype)}
+Developed a Smart India Hackathon project for energy resource monitoring and management. \\
+Designed dashboards and integrated real-time data handling using web technologies. \\
+
+\subsection*{Portfolio Website}
+Designed and deployed a personal portfolio website to showcase projects and skills. \\
+Built with HTML, CSS, and React.js; deployed on GitHub Pages. \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
